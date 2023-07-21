@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block login %}
+<div>
+        <!-- Background image -->
+<div
+class="bg-image"
+style="
+  background-image: url('https://images.saymedia-content.com/.image/t_share/MTkzNzg4MTIxMjM2NjQ1MzE1/aesthetic-website-backgrounds.gif');
+  height: 100vh;
+"
+></div>
+    <div class="position-absolute top-50 start-50 translate-middle shadow-lg p-3 mb-5 bg-body rounded ">
+        <div>
+            <form action="#",method = "post">
+                <label for="userid"><h1>WELCOME BACK !</h1></label>
+            </form>
+        </div>
+        <div class="col-md-15">
+            <label for="validationCustomUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+
+        
+        <div class="col-md-15">
+            <label for="validationCustom02" class="form-label">Password</label>
+            <input type="text" class="form-control" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+        </div>
+    <div>
+        <form action="#",method = "post">
+            <label for="captcha">Terms and Conditons:</label>
+            <input class = "btn btn-primary" type="checkbox" name="captcha" >
+            <br>
+           
+        </form>
+    </div>
+    <div>
+        <form action="#",method = "post">
+            <input class = "btn btn-primary" type="submit" value="Continue"> 
+            <a href="/"><button class="btn btn-primary" type="button">Cancel</button></a> 
+            <br> 
+            <label for="againregis">Don't have an account?</label>
+            <a href="signup">signup now</a>
+        </form>
+    </div>        
+    </div>
+</div>
+
+{% endblock %}

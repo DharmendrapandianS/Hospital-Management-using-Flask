@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block doclogin %}
+<div>
+    <!-- Background image -->
+<div
+class="bg-image"
+style="
+background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp');
+height: 100vh;
+"
+></div>
+<div class="position-absolute top-50 start-50 translate-middle shadow-lg p-3 mb-5 bg-body rounded ">
+    <div>
+        <form action="#",method = "post">
+            <label for="userid"><h1>WELCOME DOCTOR !</h1></label>
+        </form>
+    </div>
+    <div class="col-md-15">
+        <label for="validationCustomUsername" class="form-label">Username</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">Dr.</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+      </div>
+
+    
+    <div class="col-md-15">
+        <label for="validationCustom02" class="form-label">Password</label>
+        <input type="password" class="form-control" id="validationCustom02" value="" required>
+        <div class="valid-feedback">
+          Looks good!
+    </div>
+    <br>
+    <div>
+        <input class = "btn btn-primary" type="submit" value="Continue"> 
+            <a href="/"><button class="btn btn-primary" type="button">Cancel</button></a> 
+    </div>
+</div>    
+{% endblock %}

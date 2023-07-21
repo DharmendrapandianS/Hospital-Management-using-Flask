@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block home1 %}
+<div
+    class="bg-image"
+    style="
+      background-image: url('https://thumbs.dreamstime.com/b/doctor-hospital-background-copy-space-doctor-hospital-background-copy-space-healthcare-medical-concept-108682352.jpg');
+      height: 92vh;
+      align-items: center;
+      width: 217vh;
+    "
+    >
+</div>   
+    <link rel = "stylesheet" href = "styles.css">
+<div class = " position-absolute top-50 start-50 translate-middle ">
+    <h1 class="dharma title fs-1 text-black">HM Health Care </h1>
+    <h4 class=" text-black "><center>Multi Speciality Hospital</center></h4>
+   
+</div> 
+<div class = "text-block ">
+  <div class = " darma shadow-lg p-3 mb-5 bg-body rounded">
+    <div><label><h3>For Registered Users</h3></label></div>
+  <div >
+    <a href="login"><button class="btn btn-primary" type="button">Patient Login</button></a>
+    <a href="doclogin"><button class="btn btn-primary" type="button">Doctor Login</button></a>
+    <a href="admlogin"><button class="btn btn-primary" type="button">Admin Login</button></a>
+  </div>
+
+  <div><label><h3>For New Users</h3></label></div>
+  <div >
+    <a href="signup"><button class="btn btn-primary" type="button">Patient Registeration</button></a>
+    <a href="signup"><button class="btn btn-primary" type="button">Doctor Registeration</button></a>
+  </div>
+
+
+
+
+{% endblock %}

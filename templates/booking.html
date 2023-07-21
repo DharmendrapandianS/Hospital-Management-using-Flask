@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block booking %}
+    <!-- Background image -->
+    <div
+    class="bg-image"
+    style="
+      background-image: url('https://coolbackgrounds.io/images/backgrounds/index/disco-dba865f1.png');
+      height: 120vh;
+    "
+    ></div>
+    <div><br><br></div>
+
+<form class="row g-3 needs-validation position-absolute top-50 start-50 translate-middle shadow-lg p-4 mb-1 bg-body rounded " novalidate>
+  <div class="form-floating">
+    <select class="form-select" id="floatingSelect" aria-label="Floating label disabled select example">
+      <option selected>Choose option</option>
+      <option value="1">Medical Examination</option>
+      <option value="2">Doctor Checkup</option>
+      <option value="3">Result Analysis</option>
+      <option value="4">Checkup</option>
+    </select>
+    <label for="floatingSelect">Which procedure do you want to make an appointment for?</label>
+  </div>
+  
+  <div class="form-floating">
+    <select class="form-select" id="floatingSelect" aria-label="Floating label disabled select example">
+      <option selected>Choose Doctor Name</option>
+      <option value="1">Dr.sathish (General)</option>
+      <option value="2">Dr.sai(Surgian)</option>
+      <option value="3">Dr.vasudhevan(ENT)</option>
+      <option value="4">Dr.praveen(Pediatersion)</option>
+    </select>
+    <label for="floatingSelect">For Checkup</label>
+  </div>
+    <div class="col-md-6">
+      <label for="validationCustom01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom03" class="form-label">Date of booking</label>
+      <input type="date" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom03" class="form-label">Timing</label>
+      <input type="time" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom03" class="form-label">Phone Number</label>
+      <input type="number" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+        <label for="validationCustom03" class="form-label">Age</label>
+        <input type="number" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom03" class="form-label">Gender</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom03" class="form-label">Aadhar No</label>
+        <input type="email" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+        </div>
+      </div>
+      <!-- <div class="form-floating">
+        <select class="form-select" id="floatingSelect" aria-label="Floating label disabled select example">
+          <option selected>Payment Method</option>
+          <option value="1">NetBanking</option>
+          <option value="2">Cash</option>
+        </select>
+        <label for="floatingSelect">Money</label>
+      </div> -->
+    
+    <!-- <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div> -->
+    
+    <div class = "buttons col-12">
+      <button class="btn btn-primary" type="submit">Confirm Booking</button>
+      <a href="/"><button class="btn btn-primary" type="button">Cancel</button></a>
+  </div>
+  </form>
+  
+
+{% endblock %}    
